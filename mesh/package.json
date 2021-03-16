@@ -5,6 +5,7 @@
   "license": "MIT",
   "dependencies": {
     "@graphql-mesh/cli": "^0.26.1",
+    "@graphql-mesh/openapi": "^0.13.3",
     "graphql": "^15.5.0"
   }
 }
