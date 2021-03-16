@@ -20,8 +20,11 @@ export default defineComponent({
     send() {
       var dice = 3;
       var sides = 6;
-      var query = `query RollDice($dice: Int!, $sides: Int) {
-  rollDice(numDice: $dice, numSides: $sides)
+      var query = `{
+  getDie(numSides: 6) {
+    rollOnce
+    roll(numRolls: 3)
+  }
 }`;
       fetch(API_HOST + "/graphql", {
         method: "POST",
