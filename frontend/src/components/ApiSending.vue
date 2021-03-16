@@ -24,7 +24,7 @@ export default defineComponent({
           "Content-Type": "application/json",
           Accept: "application/json",
         },
-        body: JSON.stringify({ query: "{ hello }" }),
+        body: JSON.stringify({ query: "{ random }" }),
       })
         .then((r) => r.json())
         .then((data) => {
